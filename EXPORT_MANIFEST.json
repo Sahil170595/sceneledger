@@ -1,0 +1,295 @@
+{
+  "schemaVersion": "sceneledger-export-v1",
+  "license": "Apache-2.0",
+  "history": "clean root; no prior repository history",
+  "fixturePolicy": "synthetic test accounts and code-owned shapes; no user databases or session logs",
+  "excludedClasses": [
+    "internal coordination artifacts",
+    "dependency directories",
+    "databases and logs",
+    "build outputs and caches"
+  ],
+  "hashAlgorithm": "SHA-256 of distributed file bytes; inventory excludes itself",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 564,
+      "sha256": "25a871fd3897109a20997540586aa12feedbaf473042317dfd31dfa6df309e8e"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 199,
+      "sha256": "fc7c8f35ccf2d96ec627e6e3491e7e0aa414c5941c5de82c06769bad81d905c3"
+    },
+    {
+      "path": "client/.dockerignore",
+      "bytes": 18,
+      "sha256": "c8015948b6eaefde5eaa3862f2fe5ce0245fcde4d6e66f7441dcdcbbed46e652"
+    },
+    {
+      "path": "client/Dockerfile",
+      "bytes": 153,
+      "sha256": "176756fb901787a52fbefe3f0d4b28ec5002e368b27614c8fbf45de279680ddd"
+    },
+    {
+      "path": "client/index.html",
+      "bytes": 298,
+      "sha256": "84654c1db25c096559076c4fdcdac78045e892509e549945924fcc867a119037"
+    },
+    {
+      "path": "client/package.json",
+      "bytes": 482,
+      "sha256": "2e0d83878f2cc24889e4e3bdc23af01124b38746f86fc7002e25c43bc303cd9c"
+    },
+    {
+      "path": "client/src/api.ts",
+      "bytes": 2158,
+      "sha256": "0e9b3569b53e7fd1c429000353ff4eaacdec5e79e0aa8ffd74ae229abfe9023d"
+    },
+    {
+      "path": "client/src/App.tsx",
+      "bytes": 1510,
+      "sha256": "4b15b1988bfd862838fe74f57fb60b8a80271e399f20275d5d33ace0215b3094"
+    },
+    {
+      "path": "client/src/authStore.ts",
+      "bytes": 762,
+      "sha256": "cd2de117a55d95a4299ccb23ced59c17df69ea762eed7637770e84a06ed73da2"
+    },
+    {
+      "path": "client/src/canvasRenderer.test.ts",
+      "bytes": 3173,
+      "sha256": "93e0177c04f73e7af2164db6eaaf7fd6f2663f37a88105b5000194559be28b54"
+    },
+    {
+      "path": "client/src/canvasRenderer.ts",
+      "bytes": 8621,
+      "sha256": "3eab056eb9c4a7433935958346d7a0f3f3b635db0ce4194fe7a984ca11ddafb4"
+    },
+    {
+      "path": "client/src/components/Auth.tsx",
+      "bytes": 6841,
+      "sha256": "be3520ae012603929ab191b76eae578fd95338e99e4432fb08001accb65afbdd"
+    },
+    {
+      "path": "client/src/components/CanvasList.tsx",
+      "bytes": 10057,
+      "sha256": "6d54383ecdcc6e454225b80e431a5cbde2c8c002adeb11d325138d95b07dd7bc"
+    },
+    {
+      "path": "client/src/components/CanvasPage.tsx",
+      "bytes": 36339,
+      "sha256": "89dcec341993eec8393ac365cc9c731a335dce39a1bddedffd3f10779658a782"
+    },
+    {
+      "path": "client/src/components/InvitePanel.tsx",
+      "bytes": 5201,
+      "sha256": "4d673927842471136cb48b3f311f4bd26cd892ef886fbecb0d0e728cd5f9e3ff"
+    },
+    {
+      "path": "client/src/components/Toolbar.tsx",
+      "bytes": 10986,
+      "sha256": "e4b70b903109a9bb444460202e346c2bd28ad8c448d57e816026236161e51a36"
+    },
+    {
+      "path": "client/src/main.tsx",
+      "bytes": 212,
+      "sha256": "db5f69651f3b3bcb45a9892329eedee433ec186db30f4f3a4d57ba713f8d0f0a"
+    },
+    {
+      "path": "client/src/operations.test.ts",
+      "bytes": 5394,
+      "sha256": "adcdf6646291d617a0a168a75542b294facdf3636d07d560a7d959c2b5bfea09"
+    },
+    {
+      "path": "client/src/operations.ts",
+      "bytes": 1856,
+      "sha256": "e0219aa4b53d6dee9a92d67817dbf7382a81f9011c90f3575b4bdb526ce3452c"
+    },
+    {
+      "path": "client/src/types.ts",
+      "bytes": 2923,
+      "sha256": "e41db7b2c49d733028961a37861e09244b2cb0f930710cedbdfd5d9db085c28d"
+    },
+    {
+      "path": "client/src/vite-env.d.ts",
+      "bytes": 38,
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "client/tsconfig.json",
+      "bytes": 386,
+      "sha256": "0e6b554db4cab2d5d205240d5317b04ba2168eb953b74f808938f145603906f0"
+    },
+    {
+      "path": "client/vite.config.ts",
+      "bytes": 421,
+      "sha256": "2705e0bf145c492d7c43588c96704c0092401370945e34a47a9bb006170164ae"
+    },
+    {
+      "path": "docker-compose.yml",
+      "bytes": 872,
+      "sha256": "843b530a196c8f50d8bdcaf4172899b912cfecb64b71a76cc848d10eb6491033"
+    },
+    {
+      "path": "docs/api-reference.md",
+      "bytes": 10194,
+      "sha256": "a3d0b0612f386327d4ab22724195ad68bf146d4b5b4c3c0121cd29a2c162784b"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 2329,
+      "sha256": "ad2bb388f7fefb2543049e3556bf140eb9e6a6a02a9c7325cc5a9507d4392762"
+    },
+    {
+      "path": "docs/backend-guide.md",
+      "bytes": 2743,
+      "sha256": "9ce3a04a613304dfe971dd85b2663a0528104037a918a3e60d6143c7671e389c"
+    },
+    {
+      "path": "docs/data-model.md",
+      "bytes": 3697,
+      "sha256": "b4a6ca33230d448887b9ae058fb7be8526826c2467fc686022e390bb5ad6862d"
+    },
+    {
+      "path": "docs/deployment.md",
+      "bytes": 2598,
+      "sha256": "41e6bbf9232cf51ed5a3e3bcc3f1f6011b35b5c0fafad39d9848f63c54573d5b"
+    },
+    {
+      "path": "docs/frontend-guide.md",
+      "bytes": 3334,
+      "sha256": "c5484369bb7cae52c0f9b0cd7c32e641eb093440fabd13f950ec0fe9934807f9"
+    },
+    {
+      "path": "docs/tests.md",
+      "bytes": 2366,
+      "sha256": "69b27afd51b8d5ef5cb9891d1083de3330990c5c4fb631a731596bcf2ced64b1"
+    },
+    {
+      "path": "docs/websocket-protocol.md",
+      "bytes": 5025,
+      "sha256": "ef950908009529b9673d490cca1d416dab7ef799e659b83eed5f3631cafecdd9"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11346,
+      "sha256": "b8a6b0d6966238543f6ca6b466f25c3fcbc93bac2462adb589eb068f70106df9"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 744,
+      "sha256": "f4f7d6606098bcf91686ced73e488fc6839e4c47d717eb8a00a8de1c8b0f8546"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 50109,
+      "sha256": "d62987ebd8fb1eb1c4442e0afd1ff35fae1fd7e55709ab2ca7181a5654ec55b7"
+    },
+    {
+      "path": "package.json",
+      "bytes": 75,
+      "sha256": "530dd393d19a1fd0206cf8ad5a0e9c0accdd9a0a09b8e3e6c24fdec27d53cc1b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6671,
+      "sha256": "2a6572fde674664ba634669ab1c3db391aea2837ff1db53e4957c006b5a64975"
+    },
+    {
+      "path": "server/.dockerignore",
+      "bytes": 35,
+      "sha256": "8028a1ae4b72685a23ab40b37f96edfe641d34a8c10a0f12e412dd8a50d7fc5c"
+    },
+    {
+      "path": "server/app/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "server/app/auth.py",
+      "bytes": 6560,
+      "sha256": "e4ec88f019281b5052cf0a27d33465c674a3c2e1b345ee729a3873edc2ac6a15"
+    },
+    {
+      "path": "server/app/canvas.py",
+      "bytes": 9587,
+      "sha256": "77231c1e89b98390eaf84b1339b04fda8c05eaa365fdf56b0f2f6e85f9e0608c"
+    },
+    {
+      "path": "server/app/db.py",
+      "bytes": 475,
+      "sha256": "a2c11d8288d59e8cf0195021b2855871ad973a88f4f876ca08e261e4fa3f0b5f"
+    },
+    {
+      "path": "server/app/deps.py",
+      "bytes": 1240,
+      "sha256": "f5fae1df8a904718da97430c90d449f6d565562e27883cbd82b7dd8b0e247f78"
+    },
+    {
+      "path": "server/app/main.py",
+      "bytes": 1449,
+      "sha256": "11edb3dba60a4e25686a36988b0d549870eae23a38650c244202ed28be233973"
+    },
+    {
+      "path": "server/app/types.py",
+      "bytes": 3529,
+      "sha256": "add033eb93f766dba9f13468c51770f7b3385f7aa817764af90d7b1bc4a90c7a"
+    },
+    {
+      "path": "server/app/ws.py",
+      "bytes": 16639,
+      "sha256": "31e0217e35ae92bab6179d96e66495d12adb77941a38c476d6ed8133d25d576c"
+    },
+    {
+      "path": "server/Dockerfile",
+      "bytes": 720,
+      "sha256": "92606bfdf85de995318777ec7f06b6d86791e31a95be07bcd08e5a45a43801e0"
+    },
+    {
+      "path": "server/pyproject.toml",
+      "bytes": 417,
+      "sha256": "bbf9721320fecc548e095f430a2f4bacb5b6855f2962939fc1b8b0cdd3dba1dd"
+    },
+    {
+      "path": "server/schema.sql",
+      "bytes": 1590,
+      "sha256": "1ad0d0f004c7a6353c94d4117cde4ec8eaf8ed7f4f84ab5470db7d2cb4b7ddc7"
+    },
+    {
+      "path": "server/tests/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "server/tests/conftest.py",
+      "bytes": 3660,
+      "sha256": "1bd161b32e9e7e07784789788c5259c0580cde9042f0ac82015ec433c6f20ee9"
+    },
+    {
+      "path": "server/tests/test_auth.py",
+      "bytes": 3222,
+      "sha256": "6d266fd5ead4581d070c1e6bc2c55958ce54d449bdba6dc0e5c4aad94ff8737e"
+    },
+    {
+      "path": "server/tests/test_canvas.py",
+      "bytes": 6841,
+      "sha256": "cc0856ebbd6aa723fed3e8e92904c5cfb9ec3263735f3ddba99d856bca90a58a"
+    },
+    {
+      "path": "server/tests/test_ws.py",
+      "bytes": 14302,
+      "sha256": "99b6e0419eada4644b88ddc2133b68b1fded914d2f65562fcd3e835998f7e244"
+    },
+    {
+      "path": "SETUP.md",
+      "bytes": 3906,
+      "sha256": "f93e84c12271c925e1bec2cd17548be58d8494368cf8e2e119e898c3474d0962"
+    }
+  ]
+}

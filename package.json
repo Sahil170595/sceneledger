@@ -1,0 +1,5 @@
+{
+  "name": "sceneledger",
+  "private": true,
+  "workspaces": ["client"]
+}

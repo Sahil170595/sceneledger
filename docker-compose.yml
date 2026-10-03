@@ -1,0 +1,39 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: whiteboard
+      POSTGRES_PASSWORD: whiteboard
+      POSTGRES_DB: whiteboard
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./server/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U whiteboard"]
+      interval: 2s
+      timeout: 5s
+      retries: 10
+
+  server:
+    build: ./server
+    ports:
+      - "3001:3001"
+    environment:
+      DATABASE_URL: postgres://whiteboard:whiteboard@db:5432/whiteboard
+      JWT_SECRET: dev-secret-do-not-use-in-prod
+    depends_on:
+      db:
+        condition: service_healthy
+
+  client:
+    build: ./client
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_WS_URL: ws://server:3001
+      VITE_API_URL: http://server:3001
+
+volumes:
+  pgdata:
