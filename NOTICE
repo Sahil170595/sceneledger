@@ -7,6 +7,8 @@ This release preserves the application implementation and updates branding,
 public documentation, source comments and synthetic test addresses.
 A test-only database guard prevents accidentally selecting the application
 default for destructive integration tests. The export inventory records hashes.
+Color picker changes use independent debounce timers with lifecycle cleanup;
+focused regression tests cover persistence operations and undo/redo behavior.
 No original Git history is included.
 
 Third-party packages are not vendored. Their licenses, copyrights and notices

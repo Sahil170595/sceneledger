@@ -1,4 +1,4 @@
-// Sceneledger release: ordering comment corrected; behavior retained.
+// Sceneledger release: independent color debounce timers with lifecycle cleanup.
 import { useEffect, useRef, useCallback, useState } from "react";
 import type {
   Shape,
@@ -200,7 +200,18 @@ export default function CanvasPage({
   // --- Color change for selected shape ---
   // Track the color before the picker opens for a single undo entry
   const colorBeforeRef = useRef<{ fill: string; stroke: string }>({ fill: "", stroke: "" });
-  const colorTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const fillTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const strokeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (fillTimerRef.current !== null) clearTimeout(fillTimerRef.current);
+      if (strokeTimerRef.current !== null) clearTimeout(strokeTimerRef.current);
+      fillTimerRef.current = null;
+      strokeTimerRef.current = null;
+      colorBeforeRef.current = { fill: "", stroke: "" };
+    };
+  }, [canvasId]);
 
   const handleFillChange = useCallback(
     (color: string) => {
@@ -218,8 +229,9 @@ export default function CanvasPage({
       );
       requestRender();
       // Debounce: send one op after picker settles
-      if (colorTimerRef.current) clearTimeout(colorTimerRef.current);
-      colorTimerRef.current = setTimeout(() => {
+      if (fillTimerRef.current !== null) clearTimeout(fillTimerRef.current);
+      fillTimerRef.current = setTimeout(() => {
+        fillTimerRef.current = null;
         const origFill = colorBeforeRef.current.fill;
         colorBeforeRef.current.fill = "";
         if (origFill && origFill !== color) {
@@ -250,8 +262,9 @@ export default function CanvasPage({
         s.id === selId ? { ...s, stroke: color } : s
       );
       requestRender();
-      if (colorTimerRef.current) clearTimeout(colorTimerRef.current);
-      colorTimerRef.current = setTimeout(() => {
+      if (strokeTimerRef.current !== null) clearTimeout(strokeTimerRef.current);
+      strokeTimerRef.current = setTimeout(() => {
+        strokeTimerRef.current = null;
         const origStroke = colorBeforeRef.current.stroke;
         colorBeforeRef.current.stroke = "";
         if (origStroke && origStroke !== color) {

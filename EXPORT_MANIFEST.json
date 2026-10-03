@@ -82,9 +82,14 @@
       "sha256": "6d54383ecdcc6e454225b80e431a5cbde2c8c002adeb11d325138d95b07dd7bc"
     },
     {
+      "path": "client/src/components/CanvasPage.test.tsx",
+      "bytes": 6326,
+      "sha256": "fbd46cf71f6cf8c4820edf26f7283ab414b53571d42d85c743b19e8efd65c177"
+    },
+    {
       "path": "client/src/components/CanvasPage.tsx",
-      "bytes": 36339,
-      "sha256": "89dcec341993eec8393ac365cc9c731a335dce39a1bddedffd3f10779658a782"
+      "bytes": 36872,
+      "sha256": "0f8739598d65a514f18d01831e3dc1eca4215e6a1bf23d4907987b8b0cf68afc"
     },
     {
       "path": "client/src/components/InvitePanel.tsx",
@@ -168,8 +173,8 @@
     },
     {
       "path": "docs/tests.md",
-      "bytes": 2366,
-      "sha256": "69b27afd51b8d5ef5cb9891d1083de3330990c5c4fb631a731596bcf2ced64b1"
+      "bytes": 2962,
+      "sha256": "b37a55db2e974772a377d74bc87c0ecef312957ab22c05b66a52a0483352e04a"
     },
     {
       "path": "docs/websocket-protocol.md",
@@ -183,8 +188,8 @@
     },
     {
       "path": "NOTICE",
-      "bytes": 744,
-      "sha256": "f4f7d6606098bcf91686ced73e488fc6839e4c47d717eb8a00a8de1c8b0f8546"
+      "bytes": 899,
+      "sha256": "4712465fa0c4bf3f9174dbc531d94b4ed820c82fb78ac68c25229d5dbccce5b6"
     },
     {
       "path": "package-lock.json",
