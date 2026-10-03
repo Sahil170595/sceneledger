@@ -42,6 +42,8 @@ Sequence numbers describe server processing order, but the client does not buffe
 
 Undo sends an ordinary inverse patch from local history. It preserves unrelated fields, but undoing fill can overwrite a teammate's later fill change; undoing creation deletes the shape even if another user moved it. Reconnect replay is not exactly-once: operation IDs are not deduplicated, and silent no-ops are not acknowledged. An unconfirmed add already in the reconnect snapshot can appear twice locally.
 
+A separately authored [browser demo](https://chimeraforge.vercel.app/projects/product/collaborative-whiteboard) models this path and runs two concurrent same-field edits through every order they can take: six of eight leave a client disagreeing with the database, none when echoes are applied in sequence order. It also runs both undo cases above. It models the protocol; it does not run this server.
+
 ## Source map
 
 | Area | Implementation |
